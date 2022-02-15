@@ -4,7 +4,7 @@ def prestupna_godina(godina):
     poruku
     """
     if godina%4==0:
-        if godina < 100:
+        if godina%100!=0 and godina%400!=0:
             print(godina, " je prestupna godina")
         else:
             if godina%100==0:
